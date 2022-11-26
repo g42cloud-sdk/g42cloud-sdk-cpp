@@ -1,0 +1,71 @@
+
+#ifndef G42CLOUD_SDK_ECS_V2_MODEL_ListServerGroupsResponse_H_
+#define G42CLOUD_SDK_ECS_V2_MODEL_ListServerGroupsResponse_H_
+
+#include <g42cloud/ecs/v2/EcsExport.h>
+
+#include <g42cloud/core/utils/ModelBase.h>
+#include <g42cloud/core/http/HttpResponse.h>
+
+#include <g42cloud/ecs/v2/model/ListServerGroupsPageInfoResult.h>
+#include <g42cloud/ecs/v2/model/ListServerGroupsResult.h>
+#include <vector>
+
+namespace G42Cloud {
+namespace Sdk {
+namespace Ecs {
+namespace V2 {
+namespace Model {
+
+using namespace G42Cloud::Sdk::Core::Utils;
+using namespace G42Cloud::Sdk::Core::Http;
+class G42CLOUD_ECS_V2_EXPORT  ListServerGroupsResponse
+    : public ModelBase, public HttpResponse
+{
+public:
+    ListServerGroupsResponse();
+    virtual ~ListServerGroupsResponse();
+
+    /////////////////////////////////////////////
+    /// ModelBase overrides
+
+    void validate() override;
+
+    web::json::value toJson() const override;
+    bool fromJson(const web::json::value& json) override;
+
+    /////////////////////////////////////////////
+    /// ListServerGroupsResponse members
+
+
+    std::vector<ListServerGroupsResult>& getServerGroups();
+    bool serverGroupsIsSet() const;
+    void unsetserverGroups();
+    void setServerGroups(const std::vector<ListServerGroupsResult>& value);
+
+
+    ListServerGroupsPageInfoResult getPageInfo() const;
+    bool pageInfoIsSet() const;
+    void unsetpageInfo();
+    void setPageInfo(const ListServerGroupsPageInfoResult& value);
+
+
+protected:
+    std::vector<ListServerGroupsResult> serverGroups_;
+    bool serverGroupsIsSet_;
+    ListServerGroupsPageInfoResult pageInfo_;
+    bool pageInfoIsSet_;
+
+#ifdef RTTR_FLAG
+    RTTR_ENABLE()
+#endif
+};
+
+
+}
+}
+}
+}
+}
+
+#endif // G42CLOUD_SDK_ECS_V2_MODEL_ListServerGroupsResponse_H_
