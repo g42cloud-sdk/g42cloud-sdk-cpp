@@ -53,7 +53,7 @@ sudo make install
 
 ``` bash
 git clone https://github.com/github-sdk/g42cloud-sdk-cpp.git
-cd g42cloud-sdk-cpp-v3
+cd g42cloud-sdk-cpp
 mkdir build
 cd build
 cmake ..
@@ -73,7 +73,7 @@ vcpkg install curl cpprestsdk boost openssl spdlog
 
 #### Step 2: Build By CLion
 
-1. open directory `g42cloud-sdk-cpp-v3` by clion
+1. open directory `g42cloud-sdk-cpp` by clion
 
 2. choose `File` -> `Settings`
 
@@ -90,7 +90,7 @@ vcpkg install curl cpprestsdk boost openssl spdlog
 choose `Build` -> `Install` after compilation.
 
 After the preceding commands completed, **the installation directory of C++ SDK**
-is `C:\Program File (x86)\g42cloud-sdk-cpp-v3`.
+is `C:\Program File (x86)\g42cloud-sdk-cpp`.
 
 ## Code example
 
@@ -341,24 +341,8 @@ auto client = EcsClient::newBuilder()
 ```
 
 * Global Services
-
-```c++
-// add dependency for the {{Service}}Region
-#include <G42Cloud/devstar/v1/DevstarRegion.h>
-#include <G42Cloud/devstar/v1/DevstarClient.h>
-using namespace G42Cloud::Sdk::Devstar::V1;
-
-auto auth = std::make_unique<GlobalCredentials>();
-auth->withAk(ak).withSk(sk);
-
-// Initialize the credentials, projectId or domainId could be unassigned in this situation, take initializing GlobalCredentials for example
-auto client = DevStarClient::newBuilder()
-            .withCredentials(std::unique_ptr<Credentials>(auth.release()))
-            .withHttpConfig(httpConfig)
-            .withFileLog(R"(.\log.txt)", true)
-            .withStreamLog(true)
-            .withRegion(DevstarRegion::valueOf("ae-ad-1"))
-            .build();
+```
+ no global service is supported up to now.
 ```
 
 **Notice:**

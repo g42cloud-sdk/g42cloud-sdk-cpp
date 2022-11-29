@@ -1,3 +1,14 @@
+# 0.0.2-beta 2022-11-29
+
+### G42Cloud SDK Core
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Fix some errors in documentation
+- _Change_
+    - None
+
 # 0.0.1-beta 2022-11-26
 
 ### G42Cloud SDK ECS
