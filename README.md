@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://www.g42cloud.com/"><img width="450px" height="102px" src="https://auth.g42cloud.com//authui/20220614193554/public/custom/images/logo.svg"></a>
+<a href="https://www.g42cloud.com/"><img src="https://upload.wikimedia.org/wikipedia/en/4/43/Group_42_Logo.jpg"></a>
 </p>
 
 <h1 align="center">G42 Cloud C++ Software Development Kit (C++ SDK)</h1>
@@ -265,13 +265,6 @@ globalCredentials->withAk(ak)
     .withSk(sk)
     .withDomainId(domainId);
 ```
-**Notice**:
-
-- projectId/domainId supports **automatic acquisition** in version `0.0.26-beta` or later, if you want to use this
-  feature, you need to provide the ak and sk of your account and the id of the region, and then build your client
-  instance with method `WithRegion()`, detailed example could refer
-  to [3.2  Initialize client with specified Region](#32-initialize-the-serviceclient-with-specified-region-recommended-top)
-
 
 #### 2.2 Use Temporary AK&SK [:top:](#user-manual-top)
 
@@ -310,55 +303,6 @@ std::unique_ptr<Vpc::V2::VpcClient> vpcApi_v2 = Vpc::V2::VpcClient::newBuilder()
     .withEndPoint(endpoint)
     .build();
 ```
-
-**where:**
-
-- `endpoint` varies by services and regions,
-  see [Regions and Endpoints](https://docs.g42cloud.com/endpoint/index.html) to obtain correct endpoint.
-- When you meet some trouble in getting projectId using the specified region way, you could use this way instead.
-
-#### 3.2 Initialize the {Service}Client with specified Region **(Recommended)** [:top:](#user-manual-top)
-
-* Region Services
-
-```c++
-// add dependency for the {{Service}}Region
-#include <G42Cloud/ecs/v2/EcsRegion.h>
-using namespace G42Cloud::Sdk::Ecs::V2;
-
-//  Initialize the credentials, projectId or domainId could be unassigned in this situation, take initializing BasicCredentials for example
-auto auth = std::make_unique<BasicCredentials>();
-auth->withAk(ak)
-        .withSk(sk);
-// Initialize specified New{Service}Client, take initializing the region service ECS for example
-auto client = EcsClient::newBuilder()
-                .withCredentials(std::unique_ptr<Credentials>(auth.release()))
-                .withHttpConfig(httpConfig)
-                .withFileLog(R"(.\log.txt)", true)
-                .withStreamLog(true)
-                .withRegion(EcsRegion::valueOf("ae-ad-1"))
-                .build();
-```
-
-* Global Services
-```
- no global service is supported up to now.
-```
-
-**Notice:**
-
-- If you use `region` to initialize {Service}Client, projectId/domainId supports automatic acquisition, you don't need
-  to configure it when initializing Credentials.
-- Multiple ProjectId situation is **not supported**.
-- Supported region list: ae-ad-1. You may get exception such as `Unsupported regionId` if your
-  region don't in the list above.
-
-**Comparison of the two ways:**
-
-| Initialization     | Advantages                                                   | Disadvantage                                         |
-| ------------------ | ------------------------------------------------------------ | ---------------------------------------------------- |
-| Specified Endpoint | The API can be invoked successfully once it has been published in the environment. | You need to prepare projectId and endpoint yourself. |
-| Specified Region   | No need for projectId and endpoint, it supports automatic acquisition if you configure it in the right way. | The supported services and regions are limited.      |
 
 ### 4. Send Requests and Handle Responses [:top:](#user-manual-top)
 
