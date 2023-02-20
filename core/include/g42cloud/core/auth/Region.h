@@ -20,6 +20,7 @@
 #define G42CLOUD_SDK_CORE_AUTH_REGION_H
 
 #include <string>
+#include <vector>
 #include <g42cloud/core/CoreExport.h>
 
 namespace G42Cloud {
@@ -33,15 +34,19 @@ public:
 
     Region(const Region& region);
     Region(std::string regionId, std::string endpoint);
+    Region(std::string regionId, std::initializer_list<std::string> endpoints);
    
     Region& withRegionId(std::string regionId);
     Region& withEndpoint(std::string endpoint);
+    Region& withEndpoints(std::vector<std::string> endpoints);
 
     const std::string getEndpoint() const;
     const std::string getRegionId() const;
+
+    std::vector<std::string> getEndpoints() const;
 private:
     std::string regionId_;
-    std::string endpoint_;
+    std::vector<std::string> endpoints_;
 };
 }
 }

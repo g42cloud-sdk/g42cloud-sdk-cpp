@@ -22,7 +22,10 @@ public:
 
     static std::map<std::string, Region> initRegions() {
         std::map<std::string, Region> regions;
-        regions["ae-ad-1"] = Region("ae-ad-1","https://ims.ae-ad-1.g42cloud.com") ;
+        regions["ae-ad-1"] = Region("ae-ad-1",
+            { 
+                "https://ims.ae-ad-1.g42cloud.com"
+            });
         return regions;
     }
 private:
