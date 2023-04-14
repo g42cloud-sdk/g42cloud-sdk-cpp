@@ -30,7 +30,9 @@ using namespace G42Cloud::Sdk::Core;
 using namespace G42Cloud::Sdk::Core::Auth;
 using namespace G42Cloud::Sdk::Core::Exception;
 
-Client::Client() = default;
+Client::Client() {
+    endpointIndex = 0;
+};
 
 Client::~Client() = default;
 
