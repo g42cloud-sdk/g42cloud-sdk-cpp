@@ -1,3 +1,25 @@
+# 0.0.6-beta 2023-05-12
+
+### G42Cloud SDK ECS
+
+- _Features_
+  - Support the interface `NovaAttachInterface`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### G42Cloud SDK IMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListImages**
+    - changes of request param
+      - `+ __imagetype: enum value [market]`
+
 # 0.0.5-beta 2023-04-14
 
 ### G42Cloud SDK Core

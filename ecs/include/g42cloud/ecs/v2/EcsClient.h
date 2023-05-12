@@ -97,6 +97,9 @@
 #include <g42cloud/ecs/v2/model/NovaAssociateSecurityGroupRequest.h>
 #include <g42cloud/ecs/v2/model/NovaAssociateSecurityGroupRequestBody.h>
 #include <g42cloud/ecs/v2/model/NovaAssociateSecurityGroupResponse.h>
+#include <g42cloud/ecs/v2/model/NovaAttachInterfaceRequest.h>
+#include <g42cloud/ecs/v2/model/NovaAttachInterfaceRequestBody.h>
+#include <g42cloud/ecs/v2/model/NovaAttachInterfaceResponse.h>
 #include <g42cloud/ecs/v2/model/NovaCreateKeypairRequest.h>
 #include <g42cloud/ecs/v2/model/NovaCreateKeypairRequestBody.h>
 #include <g42cloud/ecs/v2/model/NovaCreateKeypairResponse.h>
@@ -301,6 +304,9 @@ public:
     );
     std::shared_ptr<NovaAssociateSecurityGroupResponse> novaAssociateSecurityGroup(
         NovaAssociateSecurityGroupRequest &request
+    );
+    std::shared_ptr<NovaAttachInterfaceResponse> novaAttachInterface(
+        NovaAttachInterfaceRequest &request
     );
     std::shared_ptr<NovaCreateKeypairResponse> novaCreateKeypair(
         NovaCreateKeypairRequest &request
