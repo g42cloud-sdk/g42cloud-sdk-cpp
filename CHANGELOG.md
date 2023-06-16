@@ -1,3 +1,19 @@
+# 0.0.7-beta 2023-06-16
+
+### G42Cloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateServers**
+    - changes of request param
+      - `+ server.data_volumes.delete_on_termination`
+  - **CreatePostPaidServers**
+    - changes of request param
+      - `+ server.data_volumes.delete_on_termination`
+
 # 0.0.6-beta 2023-05-12
 
 ### G42Cloud SDK ECS

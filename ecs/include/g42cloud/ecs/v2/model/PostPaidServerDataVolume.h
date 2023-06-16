@@ -98,6 +98,12 @@ public:
     void setDataImageId(const std::string& value);
 
 
+    bool isDeleteOnTermination() const;
+    bool deleteOnTerminationIsSet() const;
+    void unsetdeleteOnTermination();
+    void setDeleteOnTermination(bool value);
+
+
 protected:
     std::string volumetype_;
     bool volumetypeIsSet_;
@@ -119,6 +125,8 @@ protected:
     bool metadataIsSet_;
     std::string dataImageId_;
     bool dataImageIdIsSet_;
+    bool deleteOnTermination_;
+    bool deleteOnTerminationIsSet_;
 
 };
 
