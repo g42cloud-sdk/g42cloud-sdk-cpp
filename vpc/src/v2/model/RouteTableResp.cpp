@@ -146,7 +146,6 @@ bool RouteTableResp::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 std::string RouteTableResp::getId() const
 {
     return id_;

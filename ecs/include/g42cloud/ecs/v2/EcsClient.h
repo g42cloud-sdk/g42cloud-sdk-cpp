@@ -182,6 +182,7 @@
 
 #include <cpprest/details/basic_types.h>
 #include <g42cloud/core/utils/ModelBase.h>
+#include <huaweicloud/core/utils/Object.h>
 #undef U
 #include <boost/optional.hpp>
 
@@ -413,7 +414,9 @@ private:
     std::string parameterToString(int64_t value);
     std::string parameterToString(float value);
     std::string parameterToString(double value);
+    std::string parameterToString(const Object& obj);
     std::string parameterToString(const utility::datetime &value);
+
     template<class T>
     std::string parameterToString(const std::vector<T> &value)
     {

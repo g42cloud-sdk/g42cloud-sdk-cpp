@@ -50,7 +50,6 @@ bool ReinstallSeverMetadata::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 std::string ReinstallSeverMetadata::getUserData() const
 {
     return userData_;

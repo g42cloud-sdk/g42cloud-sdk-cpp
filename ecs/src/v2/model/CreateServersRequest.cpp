@@ -49,7 +49,6 @@ bool CreateServersRequest::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 CreateServersRequestBody CreateServersRequest::getBody() const
 {
     return body_;

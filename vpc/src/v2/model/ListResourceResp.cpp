@@ -90,7 +90,6 @@ bool ListResourceResp::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 Object ListResourceResp::getResouceDetail() const
 {
     return resouceDetail_;

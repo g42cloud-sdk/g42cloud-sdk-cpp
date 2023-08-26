@@ -507,7 +507,6 @@ bool VolumeDetail::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 std::string VolumeDetail::getId() const
 {
     return id_;

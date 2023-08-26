@@ -49,7 +49,6 @@ bool CreatePostPaidServersRequest::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 CreatePostPaidServersRequestBody CreatePostPaidServersRequest::getBody() const
 {
     return body_;

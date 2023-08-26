@@ -78,7 +78,6 @@ bool ListSecurityGroupRulesRequest::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 std::string ListSecurityGroupRulesRequest::getMarker() const
 {
     return marker_;

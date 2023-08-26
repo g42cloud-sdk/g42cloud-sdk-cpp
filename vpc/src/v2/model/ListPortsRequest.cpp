@@ -204,7 +204,6 @@ bool ListPortsRequest::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 std::string ListPortsRequest::getName() const
 {
     return name_;

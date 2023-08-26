@@ -314,7 +314,6 @@ bool Subnet::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 std::string Subnet::getId() const
 {
     return id_;

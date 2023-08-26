@@ -1,0 +1,111 @@
+
+#ifndef G42CLOUD_SDK_MPC_V1_MODEL_TemplateGroup_H_
+#define G42CLOUD_SDK_MPC_V1_MODEL_TemplateGroup_H_
+
+#include <g42cloud/mpc/v1/MpcExport.h>
+
+#include <g42cloud/core/utils/ModelBase.h>
+#include <g42cloud/core/http/HttpResponse.h>
+
+#include <g42cloud/mpc/v1/model/Audio.h>
+#include <g42cloud/mpc/v1/model/VideoCommon.h>
+#include <g42cloud/mpc/v1/model/VideoAndTemplate.h>
+#include <string>
+#include <vector>
+#include <g42cloud/mpc/v1/model/Common.h>
+
+namespace G42Cloud {
+namespace Sdk {
+namespace Mpc {
+namespace V1 {
+namespace Model {
+
+using namespace G42Cloud::Sdk::Core::Utils;
+using namespace G42Cloud::Sdk::Core::Http;
+class G42CLOUD_MPC_V1_EXPORT  TemplateGroup
+    : public ModelBase
+{
+public:
+    TemplateGroup();
+    virtual ~TemplateGroup();
+
+    /////////////////////////////////////////////
+    /// ModelBase overrides
+
+    void validate() override;
+
+    web::json::value toJson() const override;
+    bool fromJson(const web::json::value& json) override;
+
+    /////////////////////////////////////////////
+    /// TemplateGroup members
+
+
+    std::string getGroupId() const;
+    bool groupIdIsSet() const;
+    void unsetgroupId();
+    void setGroupId(const std::string& value);
+
+
+    std::string getName() const;
+    bool nameIsSet() const;
+    void unsetname();
+    void setName(const std::string& value);
+
+
+    std::vector<int32_t>& getTemplateIds();
+    bool templateIdsIsSet() const;
+    void unsettemplateIds();
+    void setTemplateIds(std::vector<int32_t> value);
+
+
+    std::vector<VideoAndTemplate>& getVideos();
+    bool videosIsSet() const;
+    void unsetvideos();
+    void setVideos(const std::vector<VideoAndTemplate>& value);
+
+
+    Audio getAudio() const;
+    bool audioIsSet() const;
+    void unsetaudio();
+    void setAudio(const Audio& value);
+
+
+    VideoCommon getVideoCommon() const;
+    bool videoCommonIsSet() const;
+    void unsetvideoCommon();
+    void setVideoCommon(const VideoCommon& value);
+
+
+    Common getCommon() const;
+    bool commonIsSet() const;
+    void unsetcommon();
+    void setCommon(const Common& value);
+
+
+protected:
+    std::string groupId_;
+    bool groupIdIsSet_;
+    std::string name_;
+    bool nameIsSet_;
+    std::vector<int32_t> templateIds_;
+    bool templateIdsIsSet_;
+    std::vector<VideoAndTemplate> videos_;
+    bool videosIsSet_;
+    Audio audio_;
+    bool audioIsSet_;
+    VideoCommon videoCommon_;
+    bool videoCommonIsSet_;
+    Common common_;
+    bool commonIsSet_;
+
+};
+
+
+}
+}
+}
+}
+}
+
+#endif // G42CLOUD_SDK_MPC_V1_MODEL_TemplateGroup_H_

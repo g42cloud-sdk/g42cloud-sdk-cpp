@@ -216,7 +216,6 @@ bool CreateVolumeOption::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 std::string CreateVolumeOption::getAvailabilityZone() const
 {
     return availabilityZone_;

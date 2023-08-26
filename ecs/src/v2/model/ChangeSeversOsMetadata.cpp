@@ -50,7 +50,6 @@ bool ChangeSeversOsMetadata::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 std::string ChangeSeversOsMetadata::getUserData() const
 {
     return userData_;

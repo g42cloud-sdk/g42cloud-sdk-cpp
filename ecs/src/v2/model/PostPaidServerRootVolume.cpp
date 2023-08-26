@@ -119,7 +119,6 @@ bool PostPaidServerRootVolume::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 std::string PostPaidServerRootVolume::getVolumetype() const
 {
     return volumetype_;

@@ -91,7 +91,6 @@ bool PostPaidServerNic::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 std::string PostPaidServerNic::getSubnetId() const
 {
     return subnetId_;

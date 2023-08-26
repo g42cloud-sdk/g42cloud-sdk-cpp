@@ -106,7 +106,6 @@ bool JobProgressEntities::fromJson(const web::json::value& val)
     return ok;
 }
 
-
 std::string JobProgressEntities::getImageId() const
 {
     return imageId_;
