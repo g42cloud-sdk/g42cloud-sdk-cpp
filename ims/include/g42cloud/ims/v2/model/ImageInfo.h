@@ -2,9 +2,11 @@
 #ifndef G42CLOUD_SDK_IMS_V2_MODEL_ImageInfo_H_
 #define G42CLOUD_SDK_IMS_V2_MODEL_ImageInfo_H_
 
+
 #include <g42cloud/ims/v2/ImsExport.h>
 
 #include <g42cloud/core/utils/ModelBase.h>
+#include <g42cloud/core/utils/Utils.h>
 #include <g42cloud/core/http/HttpResponse.h>
 
 #include <string>
@@ -29,10 +31,8 @@ public:
     /// ModelBase overrides
 
     void validate() override;
-
     web::json::value toJson() const override;
     bool fromJson(const web::json::value& json) override;
-
     /////////////////////////////////////////////
     /// ImageInfo members
 

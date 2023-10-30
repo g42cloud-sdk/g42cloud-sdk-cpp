@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/ListSecurityGroupRulesRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -43,7 +42,6 @@ web::json::value ListSecurityGroupRulesRequest::toJson() const
 
     return val;
 }
-
 bool ListSecurityGroupRulesRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -77,6 +75,7 @@ bool ListSecurityGroupRulesRequest::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string ListSecurityGroupRulesRequest::getMarker() const
 {

@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/UpdateVpcOption.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -47,7 +46,6 @@ web::json::value UpdateVpcOption::toJson() const
 
     return val;
 }
-
 bool UpdateVpcOption::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -90,6 +88,7 @@ bool UpdateVpcOption::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string UpdateVpcOption::getName() const
 {

@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/CreateSubnetOption.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -86,7 +85,6 @@ web::json::value CreateSubnetOption::toJson() const
 
     return val;
 }
-
 bool CreateSubnetOption::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -201,6 +199,7 @@ bool CreateSubnetOption::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string CreateSubnetOption::getName() const
 {

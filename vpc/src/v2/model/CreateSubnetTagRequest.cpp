@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/CreateSubnetTagRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -37,7 +36,6 @@ web::json::value CreateSubnetTagRequest::toJson() const
 
     return val;
 }
-
 bool CreateSubnetTagRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -62,6 +60,7 @@ bool CreateSubnetTagRequest::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string CreateSubnetTagRequest::getSubnetId() const
 {

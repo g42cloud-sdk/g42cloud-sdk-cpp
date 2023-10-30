@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/UpdateTemplateGroupResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -28,13 +27,13 @@ web::json::value UpdateTemplateGroupResponse::toJson() const
 
     return val;
 }
-
 bool UpdateTemplateGroupResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

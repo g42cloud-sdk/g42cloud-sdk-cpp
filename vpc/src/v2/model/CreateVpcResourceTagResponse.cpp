@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/CreateVpcResourceTagResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -28,13 +27,13 @@ web::json::value CreateVpcResourceTagResponse::toJson() const
 
     return val;
 }
-
 bool CreateVpcResourceTagResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

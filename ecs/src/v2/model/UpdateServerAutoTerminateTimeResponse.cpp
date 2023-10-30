@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/UpdateServerAutoTerminateTimeResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -28,13 +27,13 @@ web::json::value UpdateServerAutoTerminateTimeResponse::toJson() const
 
     return val;
 }
-
 bool UpdateServerAutoTerminateTimeResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

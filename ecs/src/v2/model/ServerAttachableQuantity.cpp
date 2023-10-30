@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/ServerAttachableQuantity.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -48,7 +47,6 @@ web::json::value ServerAttachableQuantity::toJson() const
 
     return val;
 }
-
 bool ServerAttachableQuantity::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -91,6 +89,7 @@ bool ServerAttachableQuantity::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 int32_t ServerAttachableQuantity::getFreeScsi() const
 {

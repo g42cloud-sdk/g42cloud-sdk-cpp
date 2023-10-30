@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/evs/v2/model/CinderDeleteVolumeTransferResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Evs {
@@ -28,13 +27,13 @@ web::json::value CinderDeleteVolumeTransferResponse::toJson() const
 
     return val;
 }
-
 bool CinderDeleteVolumeTransferResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

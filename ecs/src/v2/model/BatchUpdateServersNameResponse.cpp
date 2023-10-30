@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/BatchUpdateServersNameResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -32,7 +31,6 @@ web::json::value BatchUpdateServersNameResponse::toJson() const
 
     return val;
 }
-
 bool BatchUpdateServersNameResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -48,6 +46,7 @@ bool BatchUpdateServersNameResponse::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::vector<ServerId>& BatchUpdateServersNameResponse::getResponse()
 {

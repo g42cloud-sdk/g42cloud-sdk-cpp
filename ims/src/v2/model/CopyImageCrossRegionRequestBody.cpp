@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ims/v2/model/CopyImageCrossRegionRequestBody.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ims {
@@ -53,7 +52,6 @@ web::json::value CopyImageCrossRegionRequestBody::toJson() const
 
     return val;
 }
-
 bool CopyImageCrossRegionRequestBody::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -105,6 +103,7 @@ bool CopyImageCrossRegionRequestBody::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string CopyImageCrossRegionRequestBody::getAgencyName() const
 {

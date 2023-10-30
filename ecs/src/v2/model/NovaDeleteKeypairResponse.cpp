@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/NovaDeleteKeypairResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -28,13 +27,13 @@ web::json::value NovaDeleteKeypairResponse::toJson() const
 
     return val;
 }
-
 bool NovaDeleteKeypairResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

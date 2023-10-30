@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/DeleteVpcTagResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -28,13 +27,13 @@ web::json::value DeleteVpcTagResponse::toJson() const
 
     return val;
 }
-
 bool DeleteVpcTagResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

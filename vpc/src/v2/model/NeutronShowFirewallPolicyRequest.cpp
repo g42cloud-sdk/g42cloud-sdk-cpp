@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/NeutronShowFirewallPolicyRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -33,7 +32,6 @@ web::json::value NeutronShowFirewallPolicyRequest::toJson() const
 
     return val;
 }
-
 bool NeutronShowFirewallPolicyRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -49,6 +47,7 @@ bool NeutronShowFirewallPolicyRequest::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string NeutronShowFirewallPolicyRequest::getFirewallPolicyId() const
 {

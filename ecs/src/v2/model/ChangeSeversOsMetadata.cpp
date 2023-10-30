@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/ChangeSeversOsMetadata.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -33,7 +32,6 @@ web::json::value ChangeSeversOsMetadata::toJson() const
 
     return val;
 }
-
 bool ChangeSeversOsMetadata::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -49,6 +47,7 @@ bool ChangeSeversOsMetadata::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string ChangeSeversOsMetadata::getUserData() const
 {

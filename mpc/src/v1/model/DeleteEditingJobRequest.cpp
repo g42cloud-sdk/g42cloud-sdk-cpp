@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/DeleteEditingJobRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -33,7 +32,6 @@ web::json::value DeleteEditingJobRequest::toJson() const
 
     return val;
 }
-
 bool DeleteEditingJobRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -49,6 +47,7 @@ bool DeleteEditingJobRequest::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string DeleteEditingJobRequest::getJobId() const
 {

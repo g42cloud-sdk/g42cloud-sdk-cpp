@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/BatchAddServerNicOption.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -51,7 +50,6 @@ web::json::value BatchAddServerNicOption::toJson() const
 
     return val;
 }
-
 bool BatchAddServerNicOption::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -103,6 +101,7 @@ bool BatchAddServerNicOption::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string BatchAddServerNicOption::getSubnetId() const
 {

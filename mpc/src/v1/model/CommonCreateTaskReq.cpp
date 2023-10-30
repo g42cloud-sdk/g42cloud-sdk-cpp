@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/CommonCreateTaskReq.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -41,7 +40,6 @@ web::json::value CommonCreateTaskReq::toJson() const
 
     return val;
 }
-
 bool CommonCreateTaskReq::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -75,6 +73,7 @@ bool CommonCreateTaskReq::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 ObsObjInfo CommonCreateTaskReq::getInput() const
 {

@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/CreateTranscodingReq.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -94,7 +93,6 @@ web::json::value CreateTranscodingReq::toJson() const
 
     return val;
 }
-
 bool CreateTranscodingReq::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -245,6 +243,7 @@ bool CreateTranscodingReq::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 ObsObjInfo CreateTranscodingReq::getInput() const
 {

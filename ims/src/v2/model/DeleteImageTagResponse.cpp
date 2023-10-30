@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ims/v2/model/DeleteImageTagResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ims {
@@ -28,13 +27,13 @@ web::json::value DeleteImageTagResponse::toJson() const
 
     return val;
 }
-
 bool DeleteImageTagResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

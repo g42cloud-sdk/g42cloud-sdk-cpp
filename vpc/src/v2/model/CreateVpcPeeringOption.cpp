@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/CreateVpcPeeringOption.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -41,7 +40,6 @@ web::json::value CreateVpcPeeringOption::toJson() const
 
     return val;
 }
-
 bool CreateVpcPeeringOption::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -75,6 +73,7 @@ bool CreateVpcPeeringOption::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string CreateVpcPeeringOption::getName() const
 {

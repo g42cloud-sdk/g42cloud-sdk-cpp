@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/FlavorExtraSpec.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -193,7 +192,6 @@ web::json::value FlavorExtraSpec::toJson() const
 
     return val;
 }
-
 bool FlavorExtraSpec::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -497,6 +495,7 @@ bool FlavorExtraSpec::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string FlavorExtraSpec::getEcsperformancetype() const
 {

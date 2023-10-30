@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/ShowPortResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -32,7 +31,6 @@ web::json::value ShowPortResponse::toJson() const
 
     return val;
 }
-
 bool ShowPortResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -48,6 +46,7 @@ bool ShowPortResponse::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 Port ShowPortResponse::getPort() const
 {

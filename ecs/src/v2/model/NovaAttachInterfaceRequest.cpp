@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/NovaAttachInterfaceRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -37,7 +36,6 @@ web::json::value NovaAttachInterfaceRequest::toJson() const
 
     return val;
 }
-
 bool NovaAttachInterfaceRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -62,6 +60,7 @@ bool NovaAttachInterfaceRequest::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string NovaAttachInterfaceRequest::getServerId() const
 {

@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/evs/v2/model/CinderListVolumeTypesResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Evs {
@@ -32,7 +31,6 @@ web::json::value CinderListVolumeTypesResponse::toJson() const
 
     return val;
 }
-
 bool CinderListVolumeTypesResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -48,6 +46,7 @@ bool CinderListVolumeTypesResponse::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::vector<VolumeType>& CinderListVolumeTypesResponse::getVolumeTypes()
 {

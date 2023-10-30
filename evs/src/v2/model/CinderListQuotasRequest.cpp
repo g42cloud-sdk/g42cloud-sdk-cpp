@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/evs/v2/model/CinderListQuotasRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Evs {
@@ -38,7 +37,6 @@ web::json::value CinderListQuotasRequest::toJson() const
 
     return val;
 }
-
 bool CinderListQuotasRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -63,6 +61,7 @@ bool CinderListQuotasRequest::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string CinderListQuotasRequest::getTargetProjectId() const
 {

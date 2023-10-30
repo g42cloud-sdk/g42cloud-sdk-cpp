@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ims/v2/model/ExportImageRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ims {
@@ -37,7 +36,6 @@ web::json::value ExportImageRequest::toJson() const
 
     return val;
 }
-
 bool ExportImageRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -62,6 +60,7 @@ bool ExportImageRequest::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string ExportImageRequest::getImageId() const
 {

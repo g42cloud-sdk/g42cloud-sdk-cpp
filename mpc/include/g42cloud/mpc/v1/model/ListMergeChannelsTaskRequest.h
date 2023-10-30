@@ -2,9 +2,11 @@
 #ifndef G42CLOUD_SDK_MPC_V1_MODEL_ListMergeChannelsTaskRequest_H_
 #define G42CLOUD_SDK_MPC_V1_MODEL_ListMergeChannelsTaskRequest_H_
 
+
 #include <g42cloud/mpc/v1/MpcExport.h>
 
 #include <g42cloud/core/utils/ModelBase.h>
+#include <g42cloud/core/utils/Utils.h>
 #include <g42cloud/core/http/HttpResponse.h>
 
 #include <string>
@@ -29,10 +31,8 @@ public:
     /// ModelBase overrides
 
     void validate() override;
-
     web::json::value toJson() const override;
     bool fromJson(const web::json::value& json) override;
-
     /////////////////////////////////////////////
     /// ListMergeChannelsTaskRequest members
 

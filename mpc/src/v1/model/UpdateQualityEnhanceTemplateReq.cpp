@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/UpdateQualityEnhanceTemplateReq.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -37,7 +36,6 @@ web::json::value UpdateQualityEnhanceTemplateReq::toJson() const
 
     return val;
 }
-
 bool UpdateQualityEnhanceTemplateReq::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -62,6 +60,7 @@ bool UpdateQualityEnhanceTemplateReq::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 int32_t UpdateQualityEnhanceTemplateReq::getTemplateId() const
 {

@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/BatchCreateVpcTagsResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -28,13 +27,13 @@ web::json::value BatchCreateVpcTagsResponse::toJson() const
 
     return val;
 }
-
 bool BatchCreateVpcTagsResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

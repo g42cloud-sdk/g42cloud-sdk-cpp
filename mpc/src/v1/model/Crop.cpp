@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/Crop.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -33,7 +32,6 @@ web::json::value Crop::toJson() const
 
     return val;
 }
-
 bool Crop::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -49,6 +47,7 @@ bool Crop::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 int32_t Crop::getDuration() const
 {

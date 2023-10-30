@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/evs/v2/model/DeleteSnapshotRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Evs {
@@ -33,7 +32,6 @@ web::json::value DeleteSnapshotRequest::toJson() const
 
     return val;
 }
-
 bool DeleteSnapshotRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -49,6 +47,7 @@ bool DeleteSnapshotRequest::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string DeleteSnapshotRequest::getSnapshotId() const
 {

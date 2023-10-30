@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/evs/v2/model/CinderCreateVolumeTransferRequestBody.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Evs {
@@ -32,7 +31,6 @@ web::json::value CinderCreateVolumeTransferRequestBody::toJson() const
 
     return val;
 }
-
 bool CinderCreateVolumeTransferRequestBody::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -48,6 +46,7 @@ bool CinderCreateVolumeTransferRequestBody::fromJson(const web::json::value& val
     }
     return ok;
 }
+
 
 CreateVolumeTransferOption CinderCreateVolumeTransferRequestBody::getTransfer() const
 {

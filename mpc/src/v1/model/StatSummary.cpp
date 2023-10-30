@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/StatSummary.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -38,7 +37,6 @@ web::json::value StatSummary::toJson() const
 
     return val;
 }
-
 bool StatSummary::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -63,6 +61,7 @@ bool StatSummary::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 float StatSummary::getValue() const
 {

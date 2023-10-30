@@ -2,9 +2,11 @@
 #ifndef G42CLOUD_SDK_EVS_V2_MODEL_CinderListAvailabilityZonesRequest_H_
 #define G42CLOUD_SDK_EVS_V2_MODEL_CinderListAvailabilityZonesRequest_H_
 
+
 #include <g42cloud/evs/v2/EvsExport.h>
 
 #include <g42cloud/core/utils/ModelBase.h>
+#include <g42cloud/core/utils/Utils.h>
 #include <g42cloud/core/http/HttpResponse.h>
 
 
@@ -27,10 +29,8 @@ public:
     /// ModelBase overrides
 
     void validate() override;
-
     web::json::value toJson() const override;
     bool fromJson(const web::json::value& json) override;
-
     /////////////////////////////////////////////
     /// CinderListAvailabilityZonesRequest members
 

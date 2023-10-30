@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/NeutronDeleteSecurityGroupResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -28,13 +27,13 @@ web::json::value NeutronDeleteSecurityGroupResponse::toJson() const
 
     return val;
 }
-
 bool NeutronDeleteSecurityGroupResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ims/v2/model/CopyImageInRegionRequestBody.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ims {
@@ -48,7 +47,6 @@ web::json::value CopyImageInRegionRequestBody::toJson() const
 
     return val;
 }
-
 bool CopyImageInRegionRequestBody::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -91,6 +89,7 @@ bool CopyImageInRegionRequestBody::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string CopyImageInRegionRequestBody::getCmkId() const
 {

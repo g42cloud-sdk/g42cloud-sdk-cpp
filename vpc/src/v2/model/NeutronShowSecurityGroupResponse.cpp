@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/NeutronShowSecurityGroupResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -32,7 +31,6 @@ web::json::value NeutronShowSecurityGroupResponse::toJson() const
 
     return val;
 }
-
 bool NeutronShowSecurityGroupResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -48,6 +46,7 @@ bool NeutronShowSecurityGroupResponse::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 NeutronSecurityGroup NeutronShowSecurityGroupResponse::getSecurityGroup() const
 {

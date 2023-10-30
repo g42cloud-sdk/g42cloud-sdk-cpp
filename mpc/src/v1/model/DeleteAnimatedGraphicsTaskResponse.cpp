@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/DeleteAnimatedGraphicsTaskResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -28,13 +27,13 @@ web::json::value DeleteAnimatedGraphicsTaskResponse::toJson() const
 
     return val;
 }
-
 bool DeleteAnimatedGraphicsTaskResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

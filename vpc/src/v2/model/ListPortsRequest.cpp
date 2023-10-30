@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/ListPortsRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -88,7 +87,6 @@ web::json::value ListPortsRequest::toJson() const
 
     return val;
 }
-
 bool ListPortsRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -203,6 +201,7 @@ bool ListPortsRequest::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string ListPortsRequest::getName() const
 {

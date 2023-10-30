@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/BatchCreateSubnetTagsRequestBody.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -37,7 +36,6 @@ web::json::value BatchCreateSubnetTagsRequestBody::toJson() const
 
     return val;
 }
-
 bool BatchCreateSubnetTagsRequestBody::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -62,6 +60,7 @@ bool BatchCreateSubnetTagsRequestBody::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string BatchCreateSubnetTagsRequestBody::getAction() const
 {

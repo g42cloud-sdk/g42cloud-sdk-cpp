@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/evs/v2/model/Resource.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Evs {
@@ -46,7 +45,6 @@ web::json::value Resource::toJson() const
 
     return val;
 }
-
 bool Resource::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -89,6 +87,7 @@ bool Resource::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string Resource::getResourceId() const
 {

@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/ListNotifyEventRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -28,13 +27,13 @@ web::json::value ListNotifyEventRequest::toJson() const
 
     return val;
 }
-
 bool ListNotifyEventRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

@@ -1,0 +1,3 @@
+#ifndef G42CLOUD_SDK_BSON_
+#define G42CLOUD_SDK_BSON_
+#endif // G42CLOUD_SDK_BSON_

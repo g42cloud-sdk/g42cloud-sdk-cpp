@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ims/v2/model/BatchAddMembersRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ims {
@@ -32,7 +31,6 @@ web::json::value BatchAddMembersRequest::toJson() const
 
     return val;
 }
-
 bool BatchAddMembersRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -48,6 +46,7 @@ bool BatchAddMembersRequest::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 BatchAddMembersRequestBody BatchAddMembersRequest::getBody() const
 {

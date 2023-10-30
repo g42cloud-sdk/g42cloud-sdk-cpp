@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ims/v2/model/BatchAddOrDeleteTagsResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ims {
@@ -28,13 +27,13 @@ web::json::value BatchAddOrDeleteTagsResponse::toJson() const
 
     return val;
 }
-
 bool BatchAddOrDeleteTagsResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

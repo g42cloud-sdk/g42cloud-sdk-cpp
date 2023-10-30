@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ims/v2/model/GlanceCreateTagResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ims {
@@ -28,13 +27,13 @@ web::json::value GlanceCreateTagResponse::toJson() const
 
     return val;
 }
-
 bool GlanceCreateTagResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

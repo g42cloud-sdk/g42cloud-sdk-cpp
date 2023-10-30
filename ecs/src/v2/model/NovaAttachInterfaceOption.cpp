@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/NovaAttachInterfaceOption.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -42,7 +41,6 @@ web::json::value NovaAttachInterfaceOption::toJson() const
 
     return val;
 }
-
 bool NovaAttachInterfaceOption::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -76,6 +74,7 @@ bool NovaAttachInterfaceOption::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::vector<NovaAttachInterfaceFixedIp>& NovaAttachInterfaceOption::getFixedIps()
 {

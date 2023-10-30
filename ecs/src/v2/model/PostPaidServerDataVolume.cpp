@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/PostPaidServerDataVolume.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -81,7 +80,6 @@ web::json::value PostPaidServerDataVolume::toJson() const
 
     return val;
 }
-
 bool PostPaidServerDataVolume::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -187,6 +185,7 @@ bool PostPaidServerDataVolume::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string PostPaidServerDataVolume::getVolumetype() const
 {

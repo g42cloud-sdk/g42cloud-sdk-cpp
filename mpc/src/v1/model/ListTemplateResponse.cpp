@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/ListTemplateResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -37,7 +36,6 @@ web::json::value ListTemplateResponse::toJson() const
 
     return val;
 }
-
 bool ListTemplateResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -62,6 +60,7 @@ bool ListTemplateResponse::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::vector<TemplateInfo>& ListTemplateResponse::getTemplateArray()
 {

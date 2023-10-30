@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/DeleteTemplateResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -28,13 +27,13 @@ web::json::value DeleteTemplateResponse::toJson() const
 
     return val;
 }
-
 bool DeleteTemplateResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

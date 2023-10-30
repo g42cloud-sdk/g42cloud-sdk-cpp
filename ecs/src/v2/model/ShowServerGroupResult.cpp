@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/ShowServerGroupResult.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -50,7 +49,6 @@ web::json::value ShowServerGroupResult::toJson() const
 
     return val;
 }
-
 bool ShowServerGroupResult::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -102,6 +100,7 @@ bool ShowServerGroupResult::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string ShowServerGroupResult::getId() const
 {

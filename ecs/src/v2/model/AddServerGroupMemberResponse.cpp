@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/AddServerGroupMemberResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -28,13 +27,13 @@ web::json::value AddServerGroupMemberResponse::toJson() const
 
     return val;
 }
-
 bool AddServerGroupMemberResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
     
     return ok;
 }
+
 
 }
 }

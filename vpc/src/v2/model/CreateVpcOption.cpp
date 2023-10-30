@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/CreateVpcOption.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -48,7 +47,6 @@ web::json::value CreateVpcOption::toJson() const
 
     return val;
 }
-
 bool CreateVpcOption::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -91,6 +89,7 @@ bool CreateVpcOption::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string CreateVpcOption::getCidr() const
 {

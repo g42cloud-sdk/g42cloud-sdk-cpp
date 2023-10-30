@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/CreateExtractTaskResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -61,7 +60,6 @@ web::json::value CreateExtractTaskResponse::toJson() const
 
     return val;
 }
-
 bool CreateExtractTaskResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -131,6 +129,7 @@ bool CreateExtractTaskResponse::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string CreateExtractTaskResponse::getTaskId() const
 {

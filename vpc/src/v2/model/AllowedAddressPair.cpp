@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/AllowedAddressPair.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -38,7 +37,6 @@ web::json::value AllowedAddressPair::toJson() const
 
     return val;
 }
-
 bool AllowedAddressPair::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -63,6 +61,7 @@ bool AllowedAddressPair::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string AllowedAddressPair::getIpAddress() const
 {

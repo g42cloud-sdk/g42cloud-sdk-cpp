@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/RouteTableResp.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -66,7 +65,6 @@ web::json::value RouteTableResp::toJson() const
 
     return val;
 }
-
 bool RouteTableResp::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -145,6 +143,7 @@ bool RouteTableResp::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string RouteTableResp::getId() const
 {

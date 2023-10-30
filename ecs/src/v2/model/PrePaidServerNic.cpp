@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ecs/v2/model/PrePaidServerNic.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ecs {
@@ -47,7 +46,6 @@ web::json::value PrePaidServerNic::toJson() const
 
     return val;
 }
-
 bool PrePaidServerNic::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -90,6 +88,7 @@ bool PrePaidServerNic::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string PrePaidServerNic::getSubnetId() const
 {

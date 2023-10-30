@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/MultiConcatInfo.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -48,7 +47,6 @@ web::json::value MultiConcatInfo::toJson() const
 
     return val;
 }
-
 bool MultiConcatInfo::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -100,6 +98,7 @@ bool MultiConcatInfo::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::vector<ObsObjInfo>& MultiConcatInfo::getInputs()
 {

@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/VideoObj.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -43,7 +42,6 @@ web::json::value VideoObj::toJson() const
 
     return val;
 }
-
 bool VideoObj::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -77,6 +75,7 @@ bool VideoObj::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 int32_t VideoObj::getWidth() const
 {

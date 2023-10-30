@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ims/v2/model/GlanceListImageMembersResponse.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ims {
@@ -37,7 +36,6 @@ web::json::value GlanceListImageMembersResponse::toJson() const
 
     return val;
 }
-
 bool GlanceListImageMembersResponse::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -62,6 +60,7 @@ bool GlanceListImageMembersResponse::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::vector<GlanceImageMembers>& GlanceListImageMembersResponse::getMembers()
 {

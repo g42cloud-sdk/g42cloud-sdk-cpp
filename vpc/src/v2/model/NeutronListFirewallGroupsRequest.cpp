@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/vpc/v2/model/NeutronListFirewallGroupsRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Vpc {
@@ -60,7 +59,6 @@ web::json::value NeutronListFirewallGroupsRequest::toJson() const
 
     return val;
 }
-
 bool NeutronListFirewallGroupsRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -130,6 +128,7 @@ bool NeutronListFirewallGroupsRequest::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string NeutronListFirewallGroupsRequest::getMarker() const
 {

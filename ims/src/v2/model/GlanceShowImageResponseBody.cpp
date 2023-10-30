@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/ims/v2/model/GlanceShowImageResponseBody.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Ims {
@@ -327,7 +326,6 @@ web::json::value GlanceShowImageResponseBody::toJson() const
 
     return val;
 }
-
 bool GlanceShowImageResponseBody::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -874,6 +872,7 @@ bool GlanceShowImageResponseBody::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 std::string GlanceShowImageResponseBody::getBackupId() const
 {

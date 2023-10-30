@@ -1,7 +1,6 @@
 
 
 #include "g42cloud/mpc/v1/model/DeleteTranscodingTaskRequest.h"
-
 namespace G42Cloud {
 namespace Sdk {
 namespace Mpc {
@@ -33,7 +32,6 @@ web::json::value DeleteTranscodingTaskRequest::toJson() const
 
     return val;
 }
-
 bool DeleteTranscodingTaskRequest::fromJson(const web::json::value& val)
 {
     bool ok = true;
@@ -49,6 +47,7 @@ bool DeleteTranscodingTaskRequest::fromJson(const web::json::value& val)
     }
     return ok;
 }
+
 
 int32_t DeleteTranscodingTaskRequest::getTaskId() const
 {
